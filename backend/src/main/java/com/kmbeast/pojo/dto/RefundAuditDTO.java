@@ -1,0 +1,1 @@
+package com.kmbeast.pojo.dto;import jakarta.validation.constraints.*;import lombok.Data;@Data public class RefundAuditDTO{@NotNull private Integer id;@NotNull @Min(2) @Max(3) private Integer status;private String rejectRefundCause;}

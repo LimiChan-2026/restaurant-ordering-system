@@ -1,0 +1,1 @@
+package com.kmbeast.service;import com.kmbeast.pojo.api.R;import com.kmbeast.pojo.dto.*;import com.kmbeast.pojo.entity.OrdersRefundReply;import java.util.List;public interface RefundService{R<Void> refund(RefundDTO d);R<Void> audit(RefundAuditDTO d);R<List<OrdersRefundReply>> list(Integer ordersId);}

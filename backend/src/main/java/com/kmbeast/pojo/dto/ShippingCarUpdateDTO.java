@@ -1,0 +1,22 @@
+package com.kmbeast.pojo.dto;
+
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotNull;
+import lombok.Data;
+
+@Data
+public class ShippingCarUpdateDTO {
+
+    @NotNull(message = "购物车ID不能为空")
+    private Integer id;
+
+    @NotNull(message = "菜品套餐ID不能为空")
+    private Integer dishesPackageId;
+
+    @NotNull(message = "加购数量不能为空")
+    @Min(value = 1, message = "加购数量必须大于0")
+    private Integer plusNumber;
+
+    @NotNull(message = "选中状态不能为空")
+    private Boolean isSelected;
+}

@@ -1,0 +1,8 @@
+# 本文件说明 application.yml 可读取的本机数据库配置。
+# 请通过 DB_USERNAME、DB_PASSWORD 与 JWT_SECRET 注入真实值；不要提交生产凭据。
+spring:
+  datasource:
+    username: your_database_user
+    password: your_database_password
+
+# JWT_SECRET 不应写入配置文件。启动前请设置至少 32 字节的随机环境变量。
