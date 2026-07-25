@@ -23,7 +23,7 @@
         <mybatis-plus.version>3.5.5</mybatis-plus.version>
         <druid.version>1.2.21</druid.version>
         <jjwt.version>0.12.5</jjwt.version>
-        <hutool.version>5.8.25</hutool.version>
+        <hutool.version>5.8.47</hutool.version>
     </properties>
 
     <dependencies>
